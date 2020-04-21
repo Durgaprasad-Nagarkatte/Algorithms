@@ -14,6 +14,7 @@ public class MergeSortedArrays {
      * @param arr2
      * @return
      */
+
     public static int[] mergeSortedArrays(int[] arr1, int[] arr2){
         int m = arr1.length, n = arr2.length, i = 0, j = 0, k = 0;
         int[] merged_arr = new int[m+n];
