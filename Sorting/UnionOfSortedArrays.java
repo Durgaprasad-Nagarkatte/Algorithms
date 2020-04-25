@@ -1,7 +1,9 @@
 package com.durgaprasad.Sorting;
 
 public class UnionOfSortedArrays {
-
+    /*
+    Naive: Create a duplicate array of m+n and sort the array, and then print the non duplicate elements.
+     */
     public static void unionOfSortedArrays(int[] arr1, int[] arr2){
         int m = arr1.length, n = arr2.length, i = 0, j = 0;
         while((i < m ) && (j < n)){
@@ -26,12 +28,12 @@ public class UnionOfSortedArrays {
                 j++;
             }
         }
-        while(i < m){
+        while((i > 0) && (i < m) && (arr1[i] != arr1[i-1])){
             System.out.print(arr1[i] + " " );
             i++;
         }
 
-        while (j < n){
+        while ((j > 0) && (j < n) && (arr2[j] != arr2[j-1])){
             System.out.print(arr2[j] + " ");
             j++;
         }
@@ -45,8 +47,5 @@ public class UnionOfSortedArrays {
         int arr4[] = new int[]{1, 1, 1, 1, 3, 5 ,7};
         unionOfSortedArrays(arr1, arr2);
         unionOfSortedArrays(arr3, arr4);
-        //intersectionOfArraysBetter(arr1, arr2);
-        //intersectionOfArraysBetter(arr3, arr4);
-
     }
 }
