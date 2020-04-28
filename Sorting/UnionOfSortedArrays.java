@@ -48,4 +48,7 @@ public class UnionOfSortedArrays {
         unionOfSortedArrays(arr1, arr2);
         unionOfSortedArrays(arr3, arr4);
     }
+
+    public static class RotateArray {
+    }
 }
